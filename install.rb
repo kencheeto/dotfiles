@@ -12,7 +12,9 @@ dotfiles = %w[
   gitconfig
   gitignore
   ruby-version
-  zendeskrc
+  zendesk
+  git-prompt.sh
+  git-completion.sh
 ].each do |dotfile|
   command = "ln -s #{source(dotfile)} #{target(dotfile)}"
   puts command
