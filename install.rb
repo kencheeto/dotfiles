@@ -6,7 +6,7 @@ def target dotfile
   File.expand_path File.join(ENV['HOME'], '.' + dotfile)
 end
 
-dotfiles = %w[
+%w[
   bash_profile
   gemrc
   gitconfig
