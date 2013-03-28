@@ -40,7 +40,6 @@ export PATH=/usr/local/share/npm/bin:$PATH
 
 # teach bash tricks
 source ~/.git-prompt.sh
-source ~/.git-completion.sh
 
 # zendesk specific config
 source ~/.zendesk
