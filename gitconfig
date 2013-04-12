@@ -7,15 +7,15 @@
   ui = auto
 [color "branch"]
   current = yellow reverse
-    local = yellow
-   remote = green
+  local = yellow
+  remote = green
 [color "diff"]
-    meta = yellow bold
-    frag = magenta bold
-     old = red bold
-     new = green bold
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
 [color "status"]
-    added = yellow
+  added = yellow
   changed = green
 untracked = cyan
 [branch]
@@ -24,3 +24,5 @@ untracked = cyan
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 [push]
   default = upstream
+[core]
+  excludesfile = /Users/kencheeto/.gitignore
