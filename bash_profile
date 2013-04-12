@@ -15,6 +15,7 @@ export PS1='\W $(__git_ps1 "%s")\$ '
 alias ll='ls -alGF'
 alias code='cd ~/code'
 alias notes='subl ~/Dropbox/notes'
+alias fs='foreman start'
 
 # auto ls on cd
 PROMPT_COMMAND='[[ ${__new_wd:=$PWD} != $PWD ]] && ll; __new_wd=$PWD'
