@@ -11,7 +11,7 @@ alias pg-start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/ser
 alias pg-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
 # misc
-export PS1='\[\e[1;34m\]\w\e[1;32m\] $(__git_ps1 "%s ")\[\e[1;30m\]$ '
+export PS1='\W$(__git_ps1 " (%s)") \$ '
 alias ll='ls -alGF'
 alias code='cd ~/code'
 alias notes='subl ~/Dropbox/notes'
