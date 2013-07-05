@@ -6,6 +6,10 @@ def symlink source, destination
   end
 end
 
+def relative_path *steps
+  File.expand_path(File.join(*steps))
+end
+
 %w[
   bash_profile
   gemrc
@@ -16,15 +20,15 @@ end
   git-prompt.sh
 ].each do |dotfile|
   symlink(
-    File.expand_path(File.join(__FILE__, '..', dotfile)),
-    File.expand_path(File.join(ENV['HOME'], '.' + dotfile))
+    relative_path(__FILE__, '..', dotfile)
+    relative_path(ENV['HOME'], '.' + dotfile)
   )
 end
 
 sublime_root = File.join(
   File::SEPARATOR,
   'Users',
-  'kencheeto',
+  `whoami`,
   'Library',
   'Application Support',
   'Sublime Text '

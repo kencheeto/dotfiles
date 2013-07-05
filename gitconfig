@@ -26,3 +26,5 @@ untracked = cyan
   default = upstream
 [core]
   excludesfile = /Users/kencheeto/.gitignore
+[credential]
+	helper = osxkeychain
