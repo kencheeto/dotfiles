@@ -20,7 +20,7 @@ end
   git-prompt.sh
 ].each do |dotfile|
   symlink(
-    relative_path(__FILE__, '..', dotfile)
+    relative_path(__FILE__, '..', dotfile),
     relative_path(ENV['HOME'], '.' + dotfile)
   )
 end
