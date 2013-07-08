@@ -34,18 +34,6 @@ sublime_root = File.join(
   'Sublime Text '
 )
 
-[
-  'Installed Packages',
-  'Packages',
-  'Pristine Packages',
-  'Settings'
-].each do |subdirectory|
-  symlink(
-    File.expand_path(File.join(__FILE__, '..', '..', 'config', 'SublimeText2', subdirectory)),
-    File.expand_path(File.join(sublime_root + '2', subdirectory))
-  )
-end
-
 symlink(
   File.expand_path(File.join(__FILE__, '..', '..', 'config', 'SublimeText3')),
   File.expand_path(sublime_root + '3')
