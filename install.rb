@@ -28,7 +28,7 @@ end
 sublime_root = File.join(
   File::SEPARATOR,
   'Users',
-  `whoami`,
+  `whoami`.strip,
   'Library',
   'Application Support',
   'Sublime Text '
