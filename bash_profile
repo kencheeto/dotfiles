@@ -51,3 +51,7 @@ hitch() {
   if [[ -s "$HOME/.hitch_export_authors" ]] ; then source "$HOME/.hitch_export_authors" ; fi
 }
 alias unhitch='hitch -u'
+
+# node version manager
+[[ -s /Users/kencheeto/.nvm/nvm.sh ]] && . /Users/kencheeto/.nvm/nvm.sh # This loads NVM
+
