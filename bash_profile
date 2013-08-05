@@ -16,6 +16,7 @@ alias ll='ls -alGF'
 alias code='cd ~/code'
 alias notes='subl ~/Dropbox/notes'
 alias fs='foreman start'
+alias be='bundle exec'
 
 # auto ls on cd
 PROMPT_COMMAND='[[ ${__new_wd:=$PWD} != $PWD ]] && ll; __new_wd=$PWD'
