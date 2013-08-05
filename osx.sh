@@ -297,3 +297,6 @@ for app in "Dock" "Finder" "Safari" "SizeUp" "SystemUIServer"; do
   killall "$app" > /dev/null 2>&1
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
+
+# turn on press-and-hold
+defaults write -g ApplePressAndHoldEnabled -bool false
