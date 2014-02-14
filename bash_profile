@@ -14,7 +14,6 @@ alias pg-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 export PS1='\W$(__git_ps1 " (%s)") \$ '
 alias ll='ls -alGF'
 alias code='cd ~/code'
-alias notes='subl ~/Dropbox/notes'
 alias fs='foreman start'
 alias be='bundle exec'
 
@@ -31,9 +30,6 @@ export PATH=/usr/local/share/npm/bin:$PATH
 # teach bash tricks
 source ~/.git-prompt.sh
 
-# zendesk specific config
-source ~/.zendesk
-
 # hitch
 hitch() {
   command hitch "$@"
@@ -41,6 +37,4 @@ hitch() {
 }
 alias unhitch='hitch -u'
 
-# node version manager
-[[ -s /Users/kencheeto/.nvm/nvm.sh ]] && . /Users/kencheeto/.nvm/nvm.sh # This loads NVM
 
