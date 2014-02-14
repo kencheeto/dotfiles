@@ -16,7 +16,6 @@ end
   gitconfig
   gitignore
   ruby-version
-  zendesk
   git-prompt.sh
 ].each do |dotfile|
   symlink(
@@ -24,17 +23,3 @@ end
     relative_path(ENV['HOME'], '.' + dotfile)
   )
 end
-
-sublime_root = File.join(
-  File::SEPARATOR,
-  'Users',
-  `whoami`.strip,
-  'Library',
-  'Application Support',
-  'Sublime Text '
-)
-
-symlink(
-  File.expand_path(File.join(__FILE__, '..', '..', 'config', 'SublimeText3')),
-  File.expand_path(sublime_root + '3')
-)
