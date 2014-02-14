@@ -37,4 +37,7 @@ hitch() {
 }
 alias unhitch='hitch -u'
 
+# chruby - ruby version manager
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
 
