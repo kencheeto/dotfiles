@@ -6,10 +6,6 @@ alias gpu='git push'
 alias gco='git checkout'
 alias gci='git commit'
 
-# postgres
-alias pg-start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
-alias pg-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
-
 # misc
 export PS1='\W$(__git_ps1 " (%s)") \$ '
 alias ll='ls -alGF'
