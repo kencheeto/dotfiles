@@ -6,18 +6,15 @@ alias gpu='git push'
 alias gco='git checkout'
 alias gci='git commit'
 
-# postgres
-alias pg-start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
-alias pg-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
-
 # misc
 export PS1='\W$(__git_ps1 " (%s)") \$ '
+export EDITOR='subl -w'
 alias ll='ls -alGF'
 alias code='cd ~/code'
 alias fs='foreman start'
 alias be='bundle exec'
 
-# auto ls on cd
+# auto ll on cd
 PROMPT_COMMAND='[[ ${__new_wd:=$PWD} != $PWD ]] && ll; __new_wd=$PWD'
 
 # paths for brew-managed binaries
@@ -35,9 +32,7 @@ hitch() {
   command hitch "$@"
   if [[ -s "$HOME/.hitch_export_authors" ]] ; then source "$HOME/.hitch_export_authors" ; fi
 }
-alias unhitch='hitch -u'
 
 # chruby - ruby version manager
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
-

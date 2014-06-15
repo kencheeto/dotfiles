@@ -27,4 +27,5 @@ untracked = cyan
 [core]
   excludesfile = /Users/kencheeto/.gitignore
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
+
