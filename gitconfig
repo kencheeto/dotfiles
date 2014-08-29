@@ -17,13 +17,13 @@
 [color "status"]
   added = yellow
   changed = green
-untracked = cyan
+  untracked = cyan
 [branch]
   autosetuprebase = always
 [alias]
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 [push]
-  default = upstream
+  default = simple
 [core]
   excludesfile = /Users/kencheeto/.gitignore
 [credential]

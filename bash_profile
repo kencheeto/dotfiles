@@ -1,14 +1,17 @@
 # git
+alias v='vagrant'
+alias h='heroku'
 alias g='git'
 alias gs='git status'
 alias gp='git pull'
 alias gpu='git push'
 alias gco='git checkout'
 alias gci='git commit'
+alias bundle-grep="bundle exec ruby -e 'puts $:' | xargs grep -r"
 
 # misc
 export PS1='\W$(__git_ps1 " (%s)") \$ '
-export EDITOR='subl -w'
+export EDITOR='vim'
 alias ll='ls -alGF'
 alias code='cd ~/code'
 alias fs='foreman start'
@@ -27,12 +30,9 @@ export PATH=/usr/local/share/npm/bin:$PATH
 # teach bash tricks
 source ~/.git-prompt.sh
 
-# hitch
-hitch() {
-  command hitch "$@"
-  if [[ -s "$HOME/.hitch_export_authors" ]] ; then source "$HOME/.hitch_export_authors" ; fi
-}
 
 # chruby - ruby version manager
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
