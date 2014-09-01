@@ -30,9 +30,9 @@ export PATH=/usr/local/share/npm/bin:$PATH
 # teach bash tricks
 source ~/.git-prompt.sh
 
+# chruby
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
 
-# chruby - ruby version manager
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
