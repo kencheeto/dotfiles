@@ -13,7 +13,8 @@ alias bundle-grep="bundle exec ruby -e 'puts $:' | xargs grep -r"
 export PS1='\W$(__git_ps1 " (%s)") \$ '
 export EDITOR='vim'
 alias ll='ls -alGF'
-alias code='cd ~/code'
+alias code='cd ~/sync/code'
+alias notes='subl ~/sync/notes'
 alias fs='foreman start'
 alias be='bundle exec'
 
@@ -23,9 +24,11 @@ PROMPT_COMMAND='[[ ${__new_wd:=$PWD} != $PWD ]] && ll; __new_wd=$PWD'
 # paths for brew-managed binaries
 export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/local/bin:$PATH
+export PATH=~/bin:$PATH
 
 # npm
 export PATH=/usr/local/share/npm/bin:$PATH
+export PATH=./node_modules/.bin:$PATH
 
 # teach bash tricks
 source ~/.git-prompt.sh
