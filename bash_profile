@@ -15,7 +15,6 @@ export EDITOR='vim'
 alias ll='ls -alGF'
 alias code='cd ~/sync/code'
 alias notes='subl ~/sync/notes'
-alias fs='foreman start'
 alias be='bundle exec'
 
 # auto ll on cd
