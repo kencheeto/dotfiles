@@ -13,7 +13,7 @@ alias bundle-grep="bundle exec ruby -e 'puts $:' | xargs grep -r"
 export PS1='\W$(__git_ps1 " (%s)") \$ '
 export EDITOR='vim'
 alias ll='ls -alGF'
-alias code='cd ~/sync/code'
+alias code='cd ~/code'
 alias notes='subl ~/sync/notes'
 alias be='bundle exec'
 
