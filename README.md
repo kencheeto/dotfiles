@@ -10,3 +10,9 @@ pocket
 slack
 sketch
 dash
+
+sublime setup:
+install package control
+install spacegray theme
+install gitgutter
+copy sublime settings
