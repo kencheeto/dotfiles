@@ -25,12 +25,11 @@ brew cask install spideroak
 
 echo install core
 brew cask install firefox
-brew cask install chrome
+brew cask install google-chrome
 brew cask install vlc
-brew cask install spotify
-brew cask install slack
 brew cask install mailbox
 brew cask install steam
+brew cask install spotify
 
 echo install work
 brew cask install iterm2
@@ -41,9 +40,7 @@ brew cask install vagrant
 brew cask install gas-mask
 brew cask install flowdock
 brew cask install licecap
-brew cask install sketch
 
 echo finishing up
-brew cask alfred link
 brew cleanup --force
 rm -f -r /Library/Caches/Homebrew/*
