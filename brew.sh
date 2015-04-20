@@ -1,16 +1,12 @@
 #!/bin/sh
 
-# install from app store manually:
-# xcode
-# evernote
-# wunderlist
-# pixelmator
-# pocket
 
 echo installing homebrew
-ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-echo installing homebrew cask
+echo installing brew formulae
+brew install chruby
+brew install ruby-install
 brew install caskroom/cask/brew-cask
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
