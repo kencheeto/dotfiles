@@ -3,6 +3,7 @@ def symlink source, destination
     puts destination + ' already exists'
   else
     File.symlink(source, destination)
+    puts destination + ' symlinked'
   end
 end
 
@@ -17,6 +18,7 @@ end
   gitignore
   ruby-version
   git-prompt.sh
+  nvmrc
 ].each do |dotfile|
   symlink(
     relative_path(__FILE__, '..', dotfile),
