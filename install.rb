@@ -11,15 +11,22 @@ def relative_path *steps
 end
 
 %w[
-  bash_profile
-  gemrc
-  gitconfig
-  gitignore
-  ruby-version
+  .bash_profile
+  .gemrc
+  .gitconfig
+  .ruby-version
   git-prompt.sh
+  git-completion.bash
 ].each do |dotfile|
   symlink(
     relative_path(__FILE__, '..', dotfile),
-    relative_path(ENV['HOME'], '.' + dotfile)
+    relative_path(ENV['HOME'], dotfile)
   )
+
 end
+
+# special snowflake
+symlink(
+  relative_path(__FILE__, '..', 'gitignore'),
+  relative_path(ENV['HOME'], '.gitignore')
+)

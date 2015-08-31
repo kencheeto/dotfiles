@@ -13,8 +13,6 @@ alias bundle-grep="bundle exec ruby -e 'puts $:' | xargs grep -r"
 export PS1='\W$(__git_ps1 " (%s)") \$ '
 export EDITOR='vim'
 alias ll='ls -alGF'
-alias code='cd ~/code'
-alias notes='subl ~/sync/notes'
 alias be='bundle exec'
 
 # auto ll on cd
@@ -30,7 +28,8 @@ export PATH=/usr/local/share/npm/bin:$PATH
 export PATH=./node_modules/.bin:$PATH
 
 # teach bash tricks
-source ~/.git-prompt.sh
+source ~/git-prompt.sh
+source ~/git-completion.bash
 
 # chruby
 source /usr/local/opt/chruby/share/chruby/chruby.sh
@@ -38,3 +37,11 @@ source /usr/local/opt/chruby/share/chruby/auto.sh
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
+if [ -f ~/zendesk.bash ]
+then
+  source ~/zendesk.bash
+fi

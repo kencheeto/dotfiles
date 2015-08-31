@@ -17,22 +17,14 @@ echo install utilities
 brew cask install alfred
 brew cask install istat-menus
 brew cask install karabiner
-brew cask install duet
-brew cask install cloak
 brew cask install sizeup
-brew cask install spideroak
 
 echo install core
 brew cask install firefox
 brew cask install google-chrome
-brew cask install vlc
-brew cask install mailbox
-brew cask install steam
-brew cask install spotify
 
 echo install work
 brew cask install iterm2
-brew cask install heroku-toolbelt
 brew cask install sublime-text3
 brew cask install virtualbox
 brew cask install vagrant
