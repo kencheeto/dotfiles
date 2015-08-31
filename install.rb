@@ -3,6 +3,7 @@ def symlink source, destination
     puts destination + ' already exists'
   else
     File.symlink(source, destination)
+    puts destination + ' symlinked'
   end
 end
 
@@ -15,6 +16,7 @@ end
   .gemrc
   .gitconfig
   .ruby-version
+  .nvmrc
   git-prompt.sh
   git-completion.bash
 ].each do |dotfile|
