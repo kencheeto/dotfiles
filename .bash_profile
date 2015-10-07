@@ -40,7 +40,6 @@ export PATH=./node_modules/.bin:$PATH
 
 # teach bash tricks
 source ~/git-prompt.sh
-source ~/git-completion.bash
 
 # chruby
 source /usr/local/opt/chruby/share/chruby/chruby.sh
