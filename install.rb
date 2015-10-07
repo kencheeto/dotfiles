@@ -17,18 +17,12 @@ end
   .gitconfig
   .ruby-version
   .nvmrc
+  .gitignore
   git-prompt.sh
-  git-completion.bash
 ].each do |dotfile|
   symlink(
     relative_path(__FILE__, '..', dotfile),
     relative_path(ENV['HOME'], dotfile)
   )
-
 end
 
-# special snowflake
-symlink(
-  relative_path(__FILE__, '..', 'gitignore'),
-  relative_path(ENV['HOME'], '.gitignore')
-)
