@@ -9,6 +9,17 @@ alias gco='git checkout'
 alias gci='git commit'
 alias bundle-grep="bundle exec ruby -e 'puts $:' | xargs grep -r"
 
+new_branch() {
+  git checkout -b kenshiro/$1
+}
+
+push_new_branch() {
+  git push -u origin $(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
+}
+
+alias nb=new_branch
+alias pnb=push_new_branch
+
 # misc
 export PS1='\W$(__git_ps1 " (%s)") \$ '
 export EDITOR='vim'
