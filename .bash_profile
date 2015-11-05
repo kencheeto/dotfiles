@@ -39,7 +39,7 @@ source /usr/local/opt/chruby/share/chruby/auto.sh
 export PATH="/usr/local/heroku/bin:$PATH"
 
 export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+source /usr/local/opt/nvm/nvm.sh
 
 if [ -f ~/zendesk.bash ]
 then
