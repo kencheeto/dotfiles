@@ -18,7 +18,6 @@ end
   .ruby-version
   .nvmrc
   git-prompt.sh
-  git-completion.bash
 ].each do |dotfile|
   symlink(
     relative_path(__FILE__, '..', dotfile),
