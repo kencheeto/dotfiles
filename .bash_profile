@@ -7,7 +7,7 @@ alias gp='git pull'
 alias gpu='git push'
 alias gco='git checkout'
 alias gci='git commit'
-alias bundle-grep="bundle exec ruby -e 'puts $:' | xargs grep -r"
+alias bgrep="bundle exec ruby -e 'puts $:' | xargs grep -r"
 
 # misc
 export PS1='\W$(__git_ps1 " (%s)") \$ '
