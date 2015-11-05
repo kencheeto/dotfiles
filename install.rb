@@ -16,7 +16,6 @@ end
   .gemrc
   .gitconfig
   .ruby-version
-  .nvmrc
   git-prompt.sh
 ].each do |dotfile|
   symlink(

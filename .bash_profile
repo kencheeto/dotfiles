@@ -36,9 +36,6 @@ source /usr/local/opt/chruby/share/chruby/chruby.sh
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-export NVM_DIR=~/.nvm
-source /usr/local/opt/nvm/nvm.sh
-
 if [ -f ~/zendesk.bash ]
 then
   source ~/zendesk.bash
