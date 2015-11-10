@@ -9,6 +9,26 @@ alias gco='git checkout'
 alias gci='git commit'
 alias bgrep="bundle exec ruby -e 'puts $:' | xargs grep -r"
 
+new_branch() {
+  git checkout -b kenshiro/$1
+}
+alias nb=new_branch
+
+push_new_branch() {
+  git push -u origin $(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
+}
+alias pnb=push_new_branch
+
+merge_master() {
+  old_branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
+  echo $old_branch
+  git checkout master
+  git pull
+  git checkout $old_branch
+  git merge master
+}
+alias mm=merge_master
+
 # misc
 export PS1='\W$(__git_ps1 " (%s)") \$ '
 export EDITOR='vim'

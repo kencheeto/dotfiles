@@ -6,6 +6,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 echo installing brew formulae
 brew install chruby
 brew install ruby-install
+brew install nvm
 brew install caskroom/cask/brew-cask
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
@@ -18,10 +19,6 @@ brew cask install alfred
 brew cask install istat-menus
 brew cask install karabiner
 brew cask install sizeup
-
-echo install core
-brew cask install firefox
-brew cask install google-chrome
 
 echo install work
 brew cask install iterm2
