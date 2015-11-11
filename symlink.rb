@@ -18,11 +18,12 @@ end
   .ruby-version
   .nvmrc
   .gitignore
+  .inputrc
   git-prompt.sh
+  git-completion.sh
 ].each do |dotfile|
   symlink(
     relative_path(__FILE__, '..', dotfile),
     relative_path(ENV['HOME'], dotfile)
   )
 end
-

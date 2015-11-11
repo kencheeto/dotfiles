@@ -11,9 +11,15 @@
   remote = green
 [color "diff"]
   meta = yellow bold
+  commit = green bold
   frag = magenta bold
   old = red bold
   new = green bold
+  whitespace = red reverse
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
 [color "status"]
   added = yellow
   changed = green
@@ -28,4 +34,5 @@
   excludesfile = /Users/kencheeto/.gitignore
 [credential]
   helper = osxkeychain
-
+[url "git@github.com:"]
+  insteadOf = "gh:"

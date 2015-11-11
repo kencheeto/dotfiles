@@ -4,6 +4,7 @@ alias h='heroku'
 alias g='git'
 alias gs='git status'
 alias gp='git pull'
+alias gd='git diff --color --color-words --abbrev'
 alias gpu='git push'
 alias gco='git checkout'
 alias gci='git commit'
@@ -47,8 +48,18 @@ export PATH=~/bin:$PATH
 export PATH=/usr/local/share/npm/bin:$PATH
 export PATH=./node_modules/.bin:$PATH
 
+# nvm
+export NVM_DIR=~/.nvm
+source /usr/local/opt/nvm/nvm.sh
+
 # teach bash tricks
 source ~/git-prompt.sh
+source ~/git-completion.sh
+
+# Enable tab completion for `g` by marking it as an alias for `git`
+if type __git_complete &> /dev/null; then
+    __git_complete g __git_main
+fi;
 
 # chruby
 source /usr/local/opt/chruby/share/chruby/chruby.sh

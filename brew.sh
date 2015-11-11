@@ -8,6 +8,7 @@ brew install chruby
 brew install ruby-install
 brew install nvm
 brew install caskroom/cask/brew-cask
+brew install git
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
