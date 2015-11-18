@@ -17,6 +17,7 @@ end
   .gitconfig
   .ruby-version
   .nvmrc
+  .npmrc
   .gitignore
   .inputrc
   git-prompt.sh
