@@ -9,6 +9,7 @@ alias gpu='git push'
 alias gco='git checkout'
 alias gci='git commit'
 alias bgrep="bundle exec ruby -e 'puts $:' | xargs grep -r"
+alias gpa="ls | xargs -P20 -I{} git -C {} pull"
 
 new_branch() {
   git checkout -b kenshiro/$1
@@ -45,7 +46,6 @@ export PATH=/usr/local/bin:$PATH
 export PATH=~/bin:$PATH
 
 # npm
-export PATH=/usr/local/share/npm/bin:$PATH
 export PATH=./node_modules/.bin:$PATH
 
 # nvm
