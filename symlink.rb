@@ -17,11 +17,10 @@ end
   .gitconfig
   .ruby-version
   .nvmrc
-  .npmrc
   .gitignore
   .inputrc
-  git-prompt.sh
-  git-completion.sh
+  .zshrc
+  .oh-my-zsh
 ].each do |dotfile|
   symlink(
     relative_path(__FILE__, '..', dotfile),
