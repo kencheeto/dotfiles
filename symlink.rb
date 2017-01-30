@@ -16,11 +16,9 @@ end
   .gemrc
   .gitconfig
   .ruby-version
-  .nvmrc
+  .npmrc
   .gitignore
   .inputrc
-  .zshrc
-  .oh-my-zsh
 ].each do |dotfile|
   symlink(
     relative_path(__FILE__, '..', dotfile),
