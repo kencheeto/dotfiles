@@ -13,7 +13,6 @@ end
 
 %w[
   .bash_profile
-  .gemrc
   .gitconfig
   .ruby-version
   .npmrc
