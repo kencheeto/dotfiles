@@ -12,10 +12,8 @@ def relative_path *steps
 end
 
 %w[
-  .bash_profile
+  .zshrc
   .gitconfig
-  .ruby-version
-  .npmrc
   .gitignore
   .inputrc
 ].each do |dotfile|

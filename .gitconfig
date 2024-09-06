@@ -1,6 +1,6 @@
 [user]
   name = Kenshiro Nakagawa
-  email = kencheeto@gmail.com
+  email = kenshiro.nakagawa@samsara.com
 [merge]
   tool = opendiff
 [color]
@@ -20,10 +20,6 @@
   added = yellow
   changed = green
   untracked = cyan
-[color "status"]
-  added = yellow
-  changed = green
-  untracked = cyan
 [branch]
   autosetuprebase = always
 [alias]
@@ -34,5 +30,10 @@
   excludesfile = /Users/kencheeto/.gitignore
 [credential]
   helper = osxkeychain
-[url "git@github.com:"]
-  insteadOf = "gh:"
+[filter "lfs"]
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+        required = true
+        clean = git-lfs clean -- %f
+[core]
+    preloadIndex = false
